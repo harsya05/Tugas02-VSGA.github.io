@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.IconTitle {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background: beige;
+}
+
+/* Header */
+.header {
+  display: flex;
+  background: white;
+  margin: auto;
+  padding: 20px 40px;
+  border-bottom: 3px solid darkgray;
+  width: 1000px;
+}
+
+.header img {
+  width: 150px;
+  float: left;
+  margin-left: 20px;
+}
+.header h1 {
+  float: left;
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 31px;
+  font-family: sans-serif;
+  margin-left: 7px;
+}
+/* Nav */
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 3px solid darkgray;
+  width: 1000px;
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(3, 106, 190);
+  transition: 0.3s linear;
+}
+nav ul li a:hover {
+  text-decoration: overline underline rgb(3, 106, 190);
+  color: black;
+}
+/* Text */
+.text h1 {
+  width: 1000px;
+  background: white;
+  margin: auto;
+  text-align: center;
+  padding: 40px 40px;
+  padding-bottom: 5px;
+}
+/* Service */
+.service {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 3px solid darkgray;
+  width: 1000px;
+  margin: auto;
+}
+.service .box-service {
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.service .box-service img {
+  margin-bottom: 10px;
+  width: 300px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 20px;
+  transition: 0.5s linear;
+  box-shadow: 0 5px 10px rgb(165, 157, 157);
+  opacity: 70%;
+}
+.service .box-service img:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+.service .box-service p {
+  text-align: justify;
+  width: 290px;
+  margin: auto;
+  align-items: center;
+  margin-left: 11px;
+}
+.service .box-service button {
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  background: #000000;
+  color: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 15px;
+  margin-left: 105px;
+  box-shadow: 0 5px 10px rgb(165, 157, 157);
+}
+.service .box-service button:hover {
+  border-color: black;
+  background-color: #f0f8ff;
+  color: #000000;
+}
+.service .box-service button a {
+  text-decoration: none;
+  color: white;
+}
+.service .box-service button:hover a {
+  color: black;
+}
+.service .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.service .popup-image span {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  font-size: 50px;
+  font-weight: bol;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+.service .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 3px;
+  width: 550px;
+  object-fit: cover;
+}
+/* About */
+.about {
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+  padding: 10px 40px;
+  display: flex;
+}
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 5px 10px rgb(165, 157, 157);
+}
+.about .text {
+  padding: 5px;
+  margin-top: 5px;
+  border-bottom: 3px solid darkgray;
+}
+.about h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.about p {
+  text-align: justify;
+  width: 850px;
+  margin-left: 10px;
+}
+.about h4 {
+  float: right;
+  margin-top: 10px;
+}
+section {
+  width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+section .footer {
+  display: inline;
+  text-align: right;
+  background: white;
+}
+section .footer ul {
+  overflow: hidden;
+  width: 1000px;
+}
+footer {
+  width: 1000px;
+  margin: auto;
+  background: black;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 20px 40px;
+}
